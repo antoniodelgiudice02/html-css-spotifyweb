@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .flex{
@@ -18,20 +18,42 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 main{
-    height: calc(100vh - 70px);
+    height: calc(100vh - 60px);
 }
 
 /*NAVBAR*/
 
 #navbar{
-    width: 200px;
+    width: 150px;
     background-color: black;
+    padding: 10px;
 }
 
-/*HEADER*/
+.logo{
+    width: 70%;
+    margin-bottom: 10px;
+}
 
-#upgrade{
-    height: 80px;
+.menu > div{
+    line-height: 16px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.icon{
+    width: 15%;
+    margin-right: 3px;
+}
+
+.text{
+    color: white;
+    font-size: 0.5rem ;
+}
+
+/*TOPBAR*/
+
+#topbar{
+    height: 70px;
     width: 100%;
     background-color: black;
     opacity: 0.5;
@@ -52,6 +74,6 @@ main{
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 footer{
-    height: 70px;
+    height: 60px;
     background-color: #282828;
 }
