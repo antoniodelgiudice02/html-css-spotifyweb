@@ -162,32 +162,30 @@ main{
 
 /*RECENTLY PLAYED*/
 
-#recently-played .container{
-    margin-bottom: var(--first-margin-bottom);
-}
 
-#recently-played .row{
+.row{
     width: 100%;
     margin: 0 -10px;
 }
 
-#recently-played .col{
+.col{
     width: calc(100% / 6);
     padding: 10px;
 }
 
-#recently-played .title{
+.title{
     color: var(--text-main-color);
     font-size: 1.3rem;
     margin: 20px 0;
 }
 
-#recently-played img{
+#main img{
     width: 100%;
     display: block;
+    cursor: pointer;
 }
 
-#recently-played .album-title{
+.album-title{
     color: var(--text-main-color);
     font-size: 0.9rem;
     text-align: center;
@@ -195,42 +193,13 @@ main{
     font-weight: 600;
 }
 
-#recently-played .album-artist{
+.subtitle{
     color: rgb(170, 167, 167);
     font-size: 0.7rem;
     text-align: center;
     margin-top: 7px;
     font-weight: 500;
 
-}
-
-
-
-/*CREATO PER*/
-
-
-#creato-per .row{
-    width: 100%;
-}
-
-
-#creato-per .col{
-    width: calc(100% / 6);
-}
-
-#creato-per img{
-    width: 90%;
-}
-
-/*POPULAR ARTIST*/
-
-
-#popular-artist .row{
-    width: 100%;
-}
-
-#popular-artist .col{
-    width: calc(100% / 6);
 }
 
 #popular-artist .img-round{
