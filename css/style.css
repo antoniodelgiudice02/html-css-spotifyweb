@@ -284,6 +284,8 @@ footer > div{
     height: 60px;
 }
 
+/*FOOTER LEFT*/
+
 #left{
     width: 200px;
 }
@@ -321,19 +323,17 @@ footer > div{
     color: grey;
 }
 
-/*CENTER*/
+/*FOOTER CENTER*/
 
 
 #center{
     width: 600px;
     justify-content: space-around;
     padding: 5px 0;
-    
 }
 
 #center > div{
     text-align: center;
-
 }
 
 #center .player{
@@ -375,7 +375,7 @@ footer > div{
     align-items: center;
 }
 
-#center .bar .time-bar{
+#center .value-bar{
 
     width: 500px;
     height:4px;
@@ -383,7 +383,7 @@ footer > div{
 
 }
 
-#center .bar .time-passed{
+.value{
     width: 30%;
     height: 100%;
     background-color: white;
@@ -398,7 +398,22 @@ footer > div{
     font-size: var(--main-font-size);
 }
 
+/* FOOTER RIGHT*/
 
 #right{
     width: 200px;
+    align-items: center;
+    justify-content: space-around;
 }
+
+#right .fa-solid{
+    color: var(--text-main-color);
+    font-size: var(--main-font-size);
+}
+
+#right .value-bar{
+    width: 100px;
+    height:4px;
+    background-color: gray;
+}
+
