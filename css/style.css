@@ -322,15 +322,18 @@ footer > div{
 }
 
 /*CENTER*/
+
+
 #center{
     width: 600px;
     justify-content: space-around;
+    padding: 5px 0;
     
 }
 
 #center > div{
+    text-align: center;
 
-    height: 20px;
 }
 
 #center .player{
@@ -339,24 +342,60 @@ footer > div{
 
 #center .player > div{
     width: 20px;
-    height: 20px;
-    margin: 0 20px;
+    margin: 0 10px;
+    line-height: 20px;
 }
+
+#center .player > div:nth-child(3){
+    width: 25px;
+    aspect-ratio: 1;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center .fa-play{
+    margin-left: 3px;
+}
+
+#center .fa-solid{
+    color: var(--text-main-color);
+    vertical-align:middle;
+}
+
 
 /*bar*/
 
+
+
 #center .bar{
     justify-content: space-between;
+    align-items: center;
 }
 
 #center .bar .time-bar{
 
     width: 500px;
+    height:4px;
+    background-color: gray;
 
+}
+
+#center .bar .time-passed{
+    width: 30%;
+    height: 100%;
+    background-color: white;
 }
 
 #center .bar .time-left, .time-right{
     width: 20px;
+}
+
+#center .time{
+    color: white;
+    font-size: var(--main-font-size);
 }
 
 
