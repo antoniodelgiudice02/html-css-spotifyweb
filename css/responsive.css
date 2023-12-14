@@ -1,0 +1,43 @@
+@media screen and (min-width: 480px){
+    .logo-xs{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 480px){
+
+    #logo{
+        display:none;
+    }
+
+    #navbar{
+        width: 60px;
+        align-items: center;
+    }
+
+    
+    .logo-xs{
+        margin-bottom: 10px;
+        width: 30px;
+    }
+
+    #menu .text{
+        display: none;
+    }
+
+    #menu .icon{
+        width: 30px;
+    }
+
+    #playlist{
+        display: none;
+    }
+
+    #utente .text, 
+    #utente .ruler{
+        display: none;
+    }
+
+}

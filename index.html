@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100&display=swap" rel="stylesheet">
@@ -25,8 +26,14 @@
             <div id="logo">
 
                 <img src="./img/logo.svg" alt="">
+                
 
             </div>
+
+            <div class="logo-xs"> 
+                <img src="./img/logo-small.svg" alt="">
+            </div>
+
 
           <!--MENU-->
 
@@ -123,6 +130,10 @@
             </div>
 
         </nav>
+
+
+
+            
 
         <div id="body">
 
@@ -246,7 +257,7 @@
     <footer class="flex">
         
 
-        <div id="left">
+        <div id="left" class="">
 
             <div class="container flex">
                 <div class="cover">
@@ -254,13 +265,13 @@
                 </div>
                 
                 <div>
-                    <div class="title">Smooth Operator</div>
-                    <div class="subtitle">Sade</div>
+                    <div class="title ">Smooth Operator</div>
+                    <div class="subtitle ">Sade</div>
                 </div>
     
-                <div>
-                    <div><i class="fa-regular fa-heart"></i></div>
-                    <div><i class="fa-regular fa-folder"></i></div>
+                <div class="flex-column ">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
                 </div>
 
             </div>
@@ -287,10 +298,14 @@
 
         </div>
         <div id="right" class=" flex">
-            <div class="queque"><i class="fa-solid fa-list"></i></div>
-            <div class="device"><i class="fa-solid fa-desktop"></i></div>
-            <div class="icon"><i class="fa-solid fa-volume-high"></i></div>
-            <div class="value-bar"><div class="value"></div></div>
+            <div class="container flex">
+                
+                <div class="queque"><i class="fa-solid fa-list"></i></div>
+                <div class="device"><i class="fa-solid fa-desktop"></i></div>
+                <div class="icon"><i class="fa-solid fa-volume-high"></i></div>
+                <div class="value-bar"><div class="value"></div></div>
+
+            </div>
         </div>
 
     </footer>
