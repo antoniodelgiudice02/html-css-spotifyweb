@@ -226,7 +226,7 @@ main{
     padding: 10px;
 }
 
-.title{
+#body .title{
     color: var(--text-main-color);
     font-size: 1.3rem;
     margin: 20px 0;
@@ -238,7 +238,7 @@ main{
     cursor: pointer;
 }
 
-.album-title{
+#body .album-title{
     color: var(--text-main-color);
     font-size: 0.9rem;
     text-align: center;
@@ -246,7 +246,7 @@ main{
     font-weight: 600;
 }
 
-.subtitle{
+#body .subtitle{
     color: rgb(170, 167, 167);
     font-size: 0.7rem;
     text-align: center;
@@ -277,4 +277,89 @@ main{
 footer{
     height: 60px;
     background-color: #282828;
+    justify-content: space-between;
+}
+
+footer > div{
+    height: 60px;
+}
+
+#left{
+    width: 200px;
+}
+
+#left .container{
+    height: 60px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+#left img{
+    height: 40px;
+    margin-right: 5px;
+}
+
+#left .container div:nth-child(2){
+    width: 100px;
+}
+
+#left .title{
+    color: var(--text-main-color);
+    font-size: var(--main-font-size);
+    font-weight: 600;
+
+}
+
+#left .subtitle{
+    color: grey;
+    font-size: var(--main-font-size);
+
+}
+
+#left .fa-regular{
+    color: grey;
+}
+
+/*CENTER*/
+#center{
+    width: 600px;
+    justify-content: space-around;
+    
+}
+
+#center > div{
+
+    height: 20px;
+}
+
+#center .player{
+    justify-content: center;
+}
+
+#center .player > div{
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+}
+
+/*bar*/
+
+#center .bar{
+    justify-content: space-between;
+}
+
+#center .bar .time-bar{
+
+    width: 500px;
+
+}
+
+#center .bar .time-left, .time-right{
+    width: 20px;
+}
+
+
+#right{
+    width: 200px;
 }
