@@ -6,6 +6,10 @@
     list-style: none;
 }
 
+/********************************************++
+                GENERAL
+**********************************************/
+
 :root{
     --text-main-color: white;
     --main-font-size: 0.7rem;
@@ -19,6 +23,7 @@
 
 .flex{
     display: flex;
+    overflow: hidden;
 }
 
 .flex-center{
@@ -31,6 +36,11 @@
     flex-direction: column;
 }
 
+.subtitle:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
                       MAIN
@@ -41,7 +51,11 @@ main{
     height: calc(100vh - 60px);
 }
 
-/*NAVBAR*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                      NAVBAR
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 #navbar{
     width: 200px;
@@ -173,7 +187,11 @@ main{
     font-weight: 600;
 }
 
-/*   HOVER   */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                      HOVER NAVBAR
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 #navbar .text:hover,
 #utente .download .text:hover{
@@ -200,6 +218,7 @@ main{
     padding: 0 10px;
     position: sticky;
     top: 0;
+    z-index: 1;
 
 }
 
@@ -212,7 +231,25 @@ main{
     cursor: pointer;
 }
 
-/*BODY*/
+/***********************************************************
+                    TOPBAR HOVER
+**********************************************************/
+
+#topbar .button:hover{
+    border: 2px solid white;
+    color: white;
+    font-size: 0.6rem;
+    border-radius: 20px;
+    padding: 8px 23px;
+    cursor: pointer;
+
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                      BODY
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 #body{
     width: 100%;
@@ -229,8 +266,21 @@ main{
 /* CATEGORIA */
 
 #categoria .text{
-    color: var(--text-main-color);
+    color: gray;
     font-size: var(--main-font-size);
+    margin: 0 20px;
+}
+
+#categoria ul{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#categoria .text:hover{
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 30px greenyellow;
 }
 
 
@@ -299,7 +349,7 @@ main{
 
 /********************************************************
 
-                    MAIN HOVER
+                    BODY HOVER
 
 **********************************************************/
 
@@ -343,6 +393,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     width: 100vw;
+    overflow: hidden;
 }
 
 footer .container{
@@ -359,14 +410,13 @@ footer .row{
 
 footer .col{
     padding: 3px;
-    margin: 0 10px;
 }
 
 #footer-left,
 #footer-right{
-    width: 30vw;
     height: 100%;
     align-items: center;
+    flex-grow: 1;
 }
 
 #footer-right{
@@ -374,8 +424,8 @@ footer .col{
 }
 
 #footer-center{
-    width: 40vw;
     height: 100%;
+    flex-grow: 6;
 }
 
 /*STYLE*/
@@ -388,7 +438,7 @@ footer .col{
 
 #footer-left img{
     width: 42px;
-    min-width: 30px;
+    min-width: 20px;
     aspect-ratio: 1;
     margin-right: 5px;
 
@@ -412,7 +462,15 @@ footer .col{
 #footer-left .fa-regular{
     color: gray;
     font-size: var(--main-font-size);
-    padding: 0 5px;
+    padding: 0 3px;
+}
+
+.footer-left-icon-container{
+    width: 40px;
+}
+
+#footer-left .fa-regular:hover{
+    color: white;
 }
 
 
@@ -429,6 +487,7 @@ footer .col{
 #footer-center .player > div{
     width: 20px;
     line-height: 20px;
+    margin: 3px 10px;
 }
 
 #footer-center .player > div:nth-child(3){
@@ -443,7 +502,7 @@ footer .col{
 }
 
 #footer-center .fa-play{
-    margin-left: 3px;
+    margin-left: 2px;
 }
 
 #footer-center .fa-solid{
@@ -472,6 +531,15 @@ footer .col{
     width: 30%;
     height: 100%;
     background-color: white;
+    line-height: 4px;
+    text-align: end;
+}
+
+#footer-center .fa-circle{
+    color: white;
+    height: 10px;
+    vertical-align: middle;
+    opacity: 0;
 }
 
 #footer-center .bar .time-left, .time-right{
@@ -483,6 +551,34 @@ footer .col{
     font-size: 0.6rem;
     margin: 0 5px;
 }
+
+/***************************************************************
+
+                        HOVER FOOTER CENTER
+
+***************************************************************/
+
+#footer-center .player > div:nth-child(3):hover{
+    width: 27px;
+    max-width: 27px;
+    aspect-ratio: 1;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 9px;
+    font-size: 0.8rem;
+
+}
+
+#footer-center .value:hover{
+    background-color: greenyellow;
+}
+
+
+
+
 
 
 /*FOOTER RIGHT*/

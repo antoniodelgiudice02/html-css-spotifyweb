@@ -60,4 +60,36 @@
         width: calc(100% / 2);
     }
 
+
+    .song{
+        margin: 0;
+    }
+
+    #footer-center .player > div{
+        margin: 3px 5px;
+    }
+
+    #footer-center .player > div:nth-child(3):hover {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    #footer-right{
+        flex-wrap: wrap;
+    }
+
+    .footer-left-icon-container{
+        width: 15px;
+        padding: 0;
+    }
+
+    #footer-right .fa-solid{
+        font-size: 0.5rem;
+    }
+
+    #footer-right .value-bar,
+    .footer-right-icon-container{
+        margin: auto;
+    }
+
 }
