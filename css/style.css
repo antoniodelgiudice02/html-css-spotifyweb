@@ -10,6 +10,7 @@
     --text-main-color: white;
     --main-font-size: 0.7rem;
     --first-margin-bottom: 20px;
+    --navbar-text: gray;
 }
 
 .debug{
@@ -75,7 +76,7 @@ main{
 }
 
 #menu .text{
-    color: var(--text-main-color);
+    color: var(--navbar-text);
     font-size: var(--main-font-size);
 }
 
@@ -88,7 +89,7 @@ main{
 }
 
 #playlist .text{
-    color: var(--text-main-color);
+    color: var(--navbar-text);
     font-size: var(--main-font-size);
 }
 
@@ -135,7 +136,7 @@ main{
 }
 
 #utente .download .text{
-    color: var(--text-main-color);
+    color: var(--navbar-text);
     font-size: var(--main-font-size);
 }
 
@@ -172,7 +173,22 @@ main{
     font-weight: 600;
 }
 
-/*TOPBAR*/
+/*   HOVER   */
+
+#navbar .text:hover,
+#utente .download .text:hover{
+    color: var(--text-main-color);
+    cursor: pointer;
+}
+
+#navbar .button:hover{
+    background-color: var(--text-main-color);
+}
+
+/****************************************************+
+                    TOPBAR                         
+
+******************************************************/
 
 #topbar{
     height: 70px;
@@ -296,7 +312,7 @@ footer > div{
 /*FOOTER LEFT*/
 
 #left{
-    width: calc(100% / 3);
+    width: calc(100vw / 3);
     margin-right: 20px;
     display: flex;
     justify-content: flex-start;
@@ -348,7 +364,7 @@ footer > div{
 
 
 #center{
-    width: calc(100% / 3);
+    width: calc(100vw / 3);
     justify-content: space-around;
     padding: 5px 0;
 }
@@ -422,7 +438,7 @@ footer > div{
 /* FOOTER RIGHT*/
 
 #right{
-    width: calc(100% / 3);
+    width: calc(100vw / 3);
     justify-content: flex-end;
     margin-left: 20px;
 }

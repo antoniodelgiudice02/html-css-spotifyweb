@@ -8,6 +8,8 @@
 
 @media screen and (max-width: 480px){
 
+    /*MENU*/
+
     #logo{
         display:none;
     }
@@ -38,6 +40,12 @@
     #utente .text, 
     #utente .ruler{
         display: none;
+    }
+
+    /*MAIN*/
+
+    .col{
+        width: calc(100% / 2);
     }
 
 }
