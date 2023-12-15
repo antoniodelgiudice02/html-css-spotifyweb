@@ -237,17 +237,19 @@ main{
 /*RECENTLY PLAYED*/
 
 
-.row{
+#body .row{
     width: 100%;
     margin: 0 -10px;
     flex-wrap: wrap;
 }
 
-.col{
-    min-width: 120px;
+#body .col{
+    min-width: 115px;
     width: calc(100% / 6);
     padding: 10px;
+
 }
+
 
 #body .title{
     color: var(--text-main-color);
@@ -255,10 +257,15 @@ main{
     margin: 20px 0;
 }
 
-#main img{
+#main .img{
     width: 100%;
     display: block;
     cursor: pointer;
+    position: relative;
+}
+
+#main img{
+    width: 100%;
 }
 
 #body .album-title{
@@ -290,6 +297,39 @@ main{
     object-fit: cover;
 }
 
+/********************************************************
+
+                    MAIN HOVER
+
+**********************************************************/
+
+#body .hover{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+#body .hover:hover{
+    color: white;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#body .hover div{
+    width: 50px;
+    line-height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    text-align: center;
+    vertical-align: middle;
+}
+
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -302,14 +342,203 @@ footer{
     background-color: #282828;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    width: 100vw;
 }
 
-footer > div{
-    height: 60px;
+footer .container{
+    width: 100%;
+    height: 100%;
+    padding: 5px 2px;
 }
+
+footer .row{
+    width: 100%;
+    height: 100%;
+
+}
+
+footer .col{
+    padding: 3px;
+    margin: 0 10px;
+}
+
+#footer-left,
+#footer-right{
+    width: 30vw;
+    height: 100%;
+    align-items: center;
+}
+
+#footer-right{
+    justify-content: flex-end;
+}
+
+#footer-center{
+    width: 40vw;
+    height: 100%;
+}
+
+/*STYLE*/
 
 /*FOOTER LEFT*/
+
+#footer-left .cover{
+    height: 100%;
+}
+
+#footer-left img{
+    width: 42px;
+    min-width: 30px;
+    aspect-ratio: 1;
+    margin-right: 5px;
+
+}
+
+.song{
+    margin-right: 15px;
+}
+
+#footer-left .title{
+    color: var(--text-main-color);
+    font-size: var(--main-font-size);
+    font-weight: 600;
+}
+
+#footer-left .subtitle{
+    color: gray;
+    font-size: 0.6rem;
+}
+
+#footer-left .fa-regular{
+    color: gray;
+    font-size: var(--main-font-size);
+    padding: 0 5px;
+}
+
+
+/*CENTER*/
+
+#footer-center > div{
+    text-align: center;
+}
+
+#footer-center .player{
+    justify-content: center;
+}
+
+#footer-center .player > div{
+    width: 20px;
+    line-height: 20px;
+}
+
+#footer-center .player > div:nth-child(3){
+    width: 25px;
+    max-width: 25px;
+    aspect-ratio: 1;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-center .fa-play{
+    margin-left: 3px;
+}
+
+#footer-center .fa-solid{
+    color: var(--text-main-color);
+    vertical-align:middle;
+    font-size: var(--main-font-size);
+}
+
+/*BARS*/
+
+.bar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-center .value-bar{
+
+    width: 80%;
+    height:4px;
+    background-color: gray;
+    margin: auto;
+
+}
+
+#footer-center .value{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+
+#footer-center .bar .time-left, .time-right{
+    width: 20px;
+}
+
+#footer-center .time{
+    color: white;
+    font-size: 0.6rem;
+    margin: 0 5px;
+}
+
+
+/*FOOTER RIGHT*/
+
+
+#footer-right .fa-solid{
+
+    font-size: var(--main-font-size);
+    color: var(--text-main-color);
+    margin: 0 5px;
+
+}
+
+#footer-right .value-bar{
+    width: 30%;
+    min-width: 40px;
+    height: 4px;
+    background-color: gray;
+}
+
+#footer-right .value{
+    width: 30%;
+    background-color: var(--text-main-color);
+    height: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER LEFT
 
 #left{
     width: calc(100vw / 3);
@@ -360,7 +589,7 @@ footer > div{
     color: grey;
 }
 
-/*FOOTER CENTER*/
+/*FOOTER CENTER
 
 
 #center{
@@ -402,8 +631,7 @@ footer > div{
     vertical-align:middle;
 }
 
-
-/*bar*/
+/*bar*
 
 
 
@@ -435,7 +663,7 @@ footer > div{
     font-size: var(--main-font-size);
 }
 
-/* FOOTER RIGHT*/
+/* FOOTER RIGHT*
 
 #right{
     width: calc(100vw / 3);
